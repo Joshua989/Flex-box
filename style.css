@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.nav-container {
+    display: flex;
+    background-color: #333;
+    padding: 10px;
+}
+
+.nav-item {
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+    background-color: #555;
+}
+
+
+/*FLEX AND INLINE FLEX*/
+.flex-container {
+    display: flex;
+    background-color: lightblue;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.inline-flex-container {
+    display: inline-flex;
+    background-color: lightgreen;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.flex-item {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+/*FLEX DIRECTION*/
+.flex-container-2 {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.item {
+  width: 100px;
+  height: 50px;
+  background-color: lightblue;
+  margin: 10px;
+}
+
+
+/*FLEX WRAP*/
+.flex-container-3 {
+  display: flex;
+  flex-wrap: wrap; /* This enables wrapping of flex items */
+  justify-content: space-around; /* To evenly distribute items */
+  align-items: center; /* To vertically center items */
+  height: 200px; /* Set a fixed height for the container */
+  border: 1px solid #ccc; /* Border for visualization */
+}
+
+.flex-item-1 {
+  width: 300px;
+  height: 100px;
+  margin: 10p:x;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*JUSTIFY CONTENT*/
+
+.flex-container-4{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.flex-item-2 {
+  width: 50px;
+  height: 50px;
+  background-color: lightblue;
+}
+/*justify-content: flex-start;: This aligns the items to the start of the container. The first item will be at the beginning of the container, and the other items follow sequentially.
+
+justify-content: flex-end;: This aligns the items to the end of the container. The last item will be at the end of the container, and the other items are positioned before it.
+
+justify-content: center;: This centers the items horizontally within the container. The space before the first item and after the last item will be equal.
+
+justify-content: space-between;: This distributes the items evenly within the container. The first item is at the start, the last item is at the end, and the space between the items is equal. it
+
+justify-content: space-evenly;: This distributes the items evenly within the container with equal space around them, including before the first item and after the last item.*/
+
+
+/*align item*/
+.flex-container-5 {
+  display: flex;
+  align-items: center; /* Aligns items vertically at the center */
+  background-color: gold;
+  justify-content: space-around;
+  height: 200px;
+}
+
+
+
+/*align content*/
+.flex-container-6 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allows flex items to wrap to the next line */
+  align-content: space-evenly; /* Aligns lines with space between them */
+  height: 400px;
+  background-color: red;
+  
+}
+
+
+

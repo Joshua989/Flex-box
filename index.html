@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>FLEX BOX</title>
+  
+  <!-- Flexbox is a layout model in CSS that allows you to design complex web layouts more easily and efficiently. It simplifies the way items align, distribute space, and manage their size in a container, making it perfect for building responsive and dynamic web interfaces. -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Flex Container: The suitcase itself. It holds all your items (Flex Items) and decides how they should be placed inside. You can adjust the suitcase's width, height, and how items are organized within it. -->
+  <!--Flex Items: These are the individual things you pack inside the suitcase—like clothes, shoes, and toiletries. Flex Items can be arranged in different ways inside the suitcase, based on how you set up the suitcase (Flex Container).-->
+<!--practical example-->
+    <div class="nav-container">
+        <div class="nav-item">Home</div>
+        <div class="nav-item">About</div>
+        <div class="nav-item">Services</div>
+        <div class="nav-item">Contact</div>
+    </div>
+
+ <!--display: flex;: When you apply display: flex; to an element in CSS, it becomes a flex container. This means the element's children (direct descendants) automatically become flex items. The flex container adjusts the layout of its children along the main axis (horizontal by default) and the cross axis (vertical by default) according to various flex properties, allowing for flexible and responsive designs.-->
+ 
+ <!--display: inline-flex;: This property works similarly to display: flex;, but it changes the flex container's behavior to that of an inline-level element. It means the flex container will behave like an inline element, allowing other elements to sit beside it on the same line. This is particularly useful when you want a flex container to be inline within a block of text, allowing the content to flow around it.-->
+ 
+ <!--use case-->
+ <div class="flex-container">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+</div>
+
+<div class="inline-flex-container">
+    <div class="flex-item">A</div>
+    <div class="flex-item">B</div>
+    <div class="flex-item">C</div>
+</div>
+
+
+
+        <!--FLEX DIRECTION-->
+<!--flex-direction is a CSS property used in Flexbox to define the direction in which flex items are placed within a flex container
+   
+   
+
+Default Value: The default value of flex-direction is row. This means the flex container's items are placed horizontally, starting from the left and going towards the right.
+
+
+
+row: Flex items are placed in a horizontal line. The main start and end points are on the left and right sides, respectively.
+
+
+
+row-reverse: Flex items are placed horizontally, but in the reverse order. The main start and end points are on the right and left sides, respectively.
+
+column: Flex items are placed in a vertical line. The main start and end points are at the top and bottom, respectively.
+
+column-reverse: Flex items are placed vertically, but in the reverse order. The main start and end points are at the bottom and top, respectively.
+
+-->
+   <!--practical use case-->
+ <div class="flex-container-2">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+</div>
+
+
+<!--flex wrap
+Flex Wrap is a CSS property that determines whether flex items should be forced into a single line or can be wrapped into multiple lines within a flex container
+-->
+<div class="flex-container-3">
+  <div class="flex-item-1">Item 1</div>
+  <div class="flex-item-1">Item 2</div>
+  <div class="flex-item-1">Item 3</div>
+  <div class="flex-item-1">Item 4</div>
+</div>
+
+
+
+<!--JUSTIFY CONTENT
+
+Imagine you have a flex container with several flex items inside it. The justify-content property helps you arrange these items along the horizontal axis (main axis) of the container.
+-->
+<div class="flex-container-4">
+  <div class="flex-item-2">Item 1</div>
+  <div class="flex-item-2">Item 2</div>
+  <div class="flex-item-2">Item 3</div>
+  <div class="flex-item-2">Item 4</div>
+</div>
+
+
+<!--align item-
+is used to vertically align flex items within a flex container
+
+flex-start aligns items at the start of the cross axis.
+flex-end aligns items at the end of the cross axis.
+center aligns items at the center of the cross axis.
+baseline aligns items at their baselines.
+stretch stretches items to fill the container vertically.-->
+<div class="flex-container-5">
+  <div class="flex-item-2">Item 1</div>
+  <div class="flex-item-2">Item 2</div>
+  <div class="flex-item-2">Item 3</div>
+  <div class="flex-item-2">Item 4</div>
+</div>
+
+<!--align-content is used to align the flex lines within the flex container when there is extra space in the cross axis.-->
+<div class="flex-container-6">
+  <div class="flex-item-1">Item 1</div>
+  <div class="flex-item-1">Item 2</div>
+  <div class="flex-item-1">Item 3</div>
+  <div class="flex-item-1">Item 4</div>
+</div>
+</body>
+</html>
